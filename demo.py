@@ -44,6 +44,8 @@ print("/n", calendar.calendar(2025))
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-
+utc_time = datetime.now(ZoneInfo("UTC"))
 jakarta_time = datetime.now(ZoneInfo("Asia/Jakarta"))
-print(jakarta_time.strftime("%d-%m-%Y %H:%M:%S"))
+
+print("UTC time :", utc_time.strftime("%H:%M:%S"))
+print("Jakarta time :", jakarta_time.strftime("%H:%M:%S"))
