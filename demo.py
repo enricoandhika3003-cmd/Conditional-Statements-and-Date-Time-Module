@@ -33,6 +33,25 @@ if y > 50:
 else :
     print("It is less than 50.")
 
+
+
+
+
+
+totalDays = int(input("Please enter the Total Number of School Days = "))
+totalAbsent = int(input("Please enter the Total Number of Days for Absent = "))
+
+attendance = 100-((totalAbsent/(totalDays))*100)
+
+if attendance >= 75:
+    print("Student is eligible to participate in the Examination")
+else :
+    print("Student is not eligible to participate in the Examination")
+
+
+
+
+
 import datetime
 
 currentTime = datetime.datetime.now()
